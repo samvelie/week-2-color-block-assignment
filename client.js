@@ -27,7 +27,7 @@ $(document).ready(function(){
     //describes the clicked box's color
     $('#colorChosen').text(nameOfColor);
 
-    //if the user clicks the correct button, displays success, changes color, and resets random button 
+    //if the user clicks the correct button, displays success, changes color, and resets random button
     if(randomButtonIndex == clickedButtonIndex){
       $('#answerText').text('You got it right! A new random box has been chosen.');
       randomButtonIndex = randomNumber(0, colorArray.length-1);
